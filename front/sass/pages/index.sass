@@ -1,0 +1,60 @@
+$blue: #000055
+$magenta: #ff267e
+$white: #ffffff
+
+$font-suisseintl-medium: SuisseIntl-Medium, sans-serif
+$font-suisseintl-semibold: SuisseIntl-SemiBold, sans-serif
+
+.wrapper
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  overscroll-behavior: none
+  height: 100%
+  display: flex
+.banner
+  width: 50%
+  height: 100vh
+  height: calc(var(--vh, 1vh) * 100)
+  background: $blue
+  position: relative
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  cursor: default
+  &__top
+    height: 94%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-end
+    padding-bottom: 6%
+  &__logo
+    height: 12.5%
+    position: relative
+  &__img
+    height: 82%
+    width: auto
+    margin: -8% 0 -11% -42px
+  &__title,
+  &__subtitle
+    font-family: $font-suisseintl-semibold
+    color: $white
+    text-transform: uppercase
+  &__slogan
+    height: 21%
+  &__bottom
+    background: $magenta
+    height: 6%
+    flex-shrink: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    &-plus
+      background: url("../img/plus-icon.svg") no-repeat 0 0/contain
+      width: 41px
+      height: 36px
+      margin: 0 13px
+    &-txt
+      font-family: $font-suisseintl-medium
+      color: $white
+      text-transform: uppercase
+      font-size: 1.62vw
